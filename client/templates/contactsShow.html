@@ -1,0 +1,128 @@
+<template name="contactsShow">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="contacts" text="Contacts"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Details</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button button-clear" data-ion-modal="_contactsEdit" data-id="{{contact._id}}">Edit</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent class="padding contact-detail"}}
+      {{#with contact}}
+
+        <div class="list card">
+            
+          <div class="item cy-item-header">
+            <img class="cy-item-avatar" src="{{avatarUrl}}">
+            <span class="cy-item-title">旅游精选</span>
+            <button class="button button-outline cy-item-button">
+              关 注
+            </button>
+          </div>  
+          <div class="item item-image">
+            <img src="girl.jpg">
+          </div>
+          <div class="item item-body">
+            <h3>Notes</h3>
+            <p>
+              {{details.notes}}
+            </p>
+          </div>
+          <div class="item button-bar cy-item-footer">
+            <a class="button button-clear button-stable cy-redu" href="#" data-action="fake">
+              176 热度
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-ios-chatbubble"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-share"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-thumbsup"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-ios-heart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="list card">
+            
+          <div class="item cy-item-header">
+            <img class="cy-item-avatar" src="{{avatarUrl}}">
+            <span class="cy-item-title">旅游精选</span>
+            <button class="button button-outline cy-item-button">
+              关 注
+            </button>
+          </div>  
+          <div class="item item-body">
+            <h2>字体粗细</h2>
+            <span class="cy-item-p">
+              字体粗细设置属于一种比较复杂的字体样式定义，之所以说它复杂，是因为字体本身粗细千变万化，没有统一标准，对于字体粗细的具体定义也各不相同。本节主要讨论的就是在如此纷繁的字体粗细标准中，总结出一套可行的规律。 
+            </span>
+          </div>
+          <div class="item button-bar cy-item-footer">
+            <a class="button button-clear button-stable cy-redu" href="#" data-action="fake">
+              176 热度
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-ios-chatbubble"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-share"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-thumbsup"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-ios-heart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="list card">
+            
+          <div class="item cy-item-header">
+            <img class="cy-item-avatar" src="{{avatarUrl}}">
+            <span class="cy-item-title">旅游精选</span>
+            <button class="button button-outline cy-item-button">
+              关 注
+            </button>
+          </div>  
+          <div class="item item-image">
+            <img src="dog.jpg">
+          </div>
+          <div class="item item-body">
+            <span class="cy-item-p">
+              字体粗细设置属于一种比较复杂的字体样式定义，之所以说它复杂，是因为字体本身粗细千变万化，没有统一标准，对于字体粗细的具体定义也各不相同。本节主要讨论的就是在如此纷繁的字体粗细标准中，总结出一套可行的规律。 
+            </span>
+          </div>
+          <div class="item button-bar cy-item-footer">
+            <a class="button button-clear button-stable cy-redu" href="#" data-action="fake">
+              176 热度
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-ios-chatbubble"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-share"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-thumbsup"></i>
+            </a>
+            <a class="button button-clear button-stable" href="#" data-action="fake">
+              <i class="icon ion-ios-heart"></i>
+            </a>
+          </div>
+        </div>
+        
+      {{/with}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>

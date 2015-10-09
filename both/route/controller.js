@@ -2,9 +2,9 @@ Router.configure({
   layoutTemplate: 'layout'
 });
 
-// BaseController = RouteController.extend({
-// 	layoutTemplate: 'layout'
-// });
+BaseController = RouteController.extend({
+
+});
 
 TabsController = RouteController.extend({
 	layoutTemplate: 'tabsLayout'

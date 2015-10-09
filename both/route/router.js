@@ -1,25 +1,23 @@
-
 Router.route('/', {
-  name: 'contactsShow',
-  controller: 'TabsController'
+  controller: 'TabsController',
+  name: 'contactsShow'
 });
 
-Router.route('/recent', {
-  name: 'recent',
-  controller: 'TabsController'
+Router.route('/find', {
+  controller: 'TabsController',
+  name: 'find'
 });
 
 Router.route('/post', {
-  name: 'post',
-  controller: 'TabsController'
+  name: 'post'
 });
 
-Router.route('/notifications', {
-  name: 'notifications',
-  controller: 'TabsController'
+Router.route('/pray', {
+  controller: 'TabsController',
+  name: 'pray'
 });
 
 Router.route('/profile', {
-  name: 'profile',
-  controller: 'TabsController'
+  controller: 'TabsController',
+  name: 'profile'
 });
